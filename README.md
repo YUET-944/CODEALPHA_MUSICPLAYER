@@ -15,6 +15,11 @@ A sleek, responsive, and fully functional music player web application built ent
 - **Autoplay:** Automatically proceeds to the next song.
 - **Responsive Design:** Works flawlessly on desktop and mobile devices.
 
+## Live demo
+
+https://v0-image-analysis-tawny-eight-44.vercel.app/
+
+
 ## 🛠️ Built With
 
 *   HTML5
