@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="music-player">
+        <div class="player-header">
+            <h1>Music Player</h1>
+        </div>
+        
+        <div class="album-art">
+            <img id="albumCover" src="/placeholder.svg?height=300&width=300" alt="Album Cover">
+            <div class="vinyl-effect"></div>
+        </div>
+        
+        <div class="song-info">
+            <h2 id="songTitle">Song Title</h2>
+            <p id="artistName">Artist Name</p>
+        </div>
+        
+        <div class="progress-container">
+            <span id="currentTime">0:00</span>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+                <div class="progress-handle" id="progressHandle"></div>
+            </div>
+            <span id="duration">0:00</span>
+        </div>
+        
+        <div class="controls">
+            <button id="shuffleBtn" class="control-btn">
+                <i class="fas fa-random"></i>
+            </button>
+            <button id="prevBtn" class="control-btn">
+                <i class="fas fa-step-backward"></i>
+            </button>
+            <button id="playPauseBtn" class="control-btn play-pause">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="nextBtn" class="control-btn">
+                <i class="fas fa-step-forward"></i>
+            </button>
+            <button id="repeatBtn" class="control-btn">
+                <i class="fas fa-redo"></i>
+            </button>
+        </div>
+        
+        <div class="volume-container">
+            <i class="fas fa-volume-down"></i>
+            <div class="volume-bar">
+                <div class="volume-progress" id="volumeProgress"></div>
+                <div class="volume-handle" id="volumeHandle"></div>
+            </div>
+            <i class="fas fa-volume-up"></i>
+        </div>
+        
+        <div class="playlist-toggle">
+            <button id="playlistBtn" class="control-btn">
+                <i class="fas fa-list"></i>
+                <span>Playlist</span>
+            </button>
+        </div>
+        
+        <div class="playlist" id="playlist">
+            <h3>Playlist</h3>
+            <ul id="playlistItems"></ul>
+        </div>
+        
+        <audio id="audioPlayer" preload="metadata"></audio>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
